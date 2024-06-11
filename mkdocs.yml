@@ -1,0 +1,61 @@
+site_name: 个人博客
+site_url: https://ultralimit.github.io/blog/
+copyright: 
+plugins:
+ - search
+ - tags
+markdown_extensions:
+ - def_list
+ - md_in_html
+ - attr_list
+ - pymdownx.inlinehilite
+ - pymdownx.snippets
+ - pymdownx.superfences
+ -
+  toc:
+    permalink: True
+    slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+ -
+  pymdownx.arithmatex:
+    generic: true
+ -
+  pymdownx.highlight:
+    linenums: true
+    anchor_linenums: true
+    auto_title: true
+    line_spans: __span
+    pygments_lang_class: true
+extra:
+  social: []
+extra_javascript:
+ - javascripts/katex.js
+ - https://unpkg.com/katex@0/dist/katex.min.js
+ - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+extra_css:
+ - https://unpkg.com/katex@0/dist/katex.min.css
+theme:
+  favicon: assets/images/add.jpg
+  custom_dir: overrides
+  logo: assets/combi.jpg
+  name: material
+  palette:
+   -
+    scheme: default
+    primary: teal
+    accent: deep-purple
+    toggle:
+      icon: material/weather-night
+      name: 切换至夜间模式
+   -
+    scheme: slate
+    primary: teal
+    accent: deep-purple
+    toggle:
+      icon: material/weather-sunny
+      name: 切换至日间模式
+  features:
+   - content.code.copy
+   - navigation.top
+   - navigation.footer
+   - navigation.expand
+   - navigation.tabs
