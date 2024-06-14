@@ -36,3 +36,43 @@
 
 ![image-20240612214247470](./assets/image-20240612214247470.png)
 
+## 苍穹外卖案例
+
+![image-20240612214650431](./assets/image-20240612214650431.png)
+
+![image-20240612214717035](./assets/image-20240612214717035.png)
+
+坐标
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-cache</artifactId>
+</dependency>
+```
+
+启动类注解
+
+![image-20240612214931512](./assets/image-20240612214931512.png)
+
+controller注解
+
+user的controller
+
+![image-20240612220407778](./assets/image-20240612220407778.png)
+
+admin的controller
+
+![image-20240612220419094](./assets/image-20240612220419094.png)
+
+> 注解的key的注释
+>
+> SpEL
+
+![image-20240612220005608](./assets/image-20240612220005608.png)
+
