@@ -1,6 +1,5 @@
 site_name: 个人博客
 site_url: https://ultralimit.github.io/blog/
-copyright: 
 plugins:
  - search
  - tags
@@ -13,7 +12,7 @@ markdown_extensions:
  - pymdownx.superfences
  -
   toc:
-    permalink: True
+    permalink: true
     slugify: !!python/object/apply:pymdownx.slugs.slugify {}
  -
   pymdownx.arithmatex:
@@ -41,15 +40,15 @@ theme:
   palette:
    -
     scheme: default
-    primary: teal
-    accent: deep-purple
+    primary: purple
+    accent: light-blue
     toggle:
       icon: material/weather-night
       name: 切换至夜间模式
    -
     scheme: slate
-    primary: teal
-    accent: deep-purple
+    primary: purple
+    accent: light-blue
     toggle:
       icon: material/weather-sunny
       name: 切换至日间模式
