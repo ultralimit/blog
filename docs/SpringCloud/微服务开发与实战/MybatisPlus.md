@@ -242,21 +242,199 @@ SQL执行提高效率（MySQL）
 可以采用数据迁移，然后真正删除.
 ```
 
-
-
 ### 枚举处理器
 
+![image-20240625152157143](./assets/image-20240625152157143.png) 
 
+![image-20240625153434081](./assets/image-20240625153434081.png) 
+
+```java
+import lombok.Getter;
+@Getter
+public enum UserStatus {
+    NORMAL(1, "正常"),
+    FREEZE(1, "正常");
+    private final int value;
+    private final String desc;
+    UserStatus(int value, String desc) {
+        this.value = value;
+        this.desc = desc;
+    }
+}
+```
+
+```
+数据类型是mybatis做的，不是mp做的。
+```
+
+![image-20240625154138660](./assets/image-20240625154138660.png) 
+
+![image-20240625154201969](./assets/image-20240625154201969.png) 
+
+#### 使用步骤
+
+![image-20240625154457838](./assets/image-20240625154457838.png) 
+
+![image-20240625154507829](./assets/image-20240625154507829.png)
+
+```java
+import com.baomidou.mybatisplus.annotation.EnumValue;
+import lombok.Getter;
+
+@Getter
+public enum UserStatus {
+    NORMAL(1, "正常"),
+    FROZEN(2, "正常");
+
+    @EnumValue
+    private final int value;
+    private final String desc;
+
+
+    UserStatus(int value, String desc) {
+        this.value = value;
+        this.desc = desc;
+    }
+}
+```
+
+```xml
+mybatis-plus:
+ configuration:
+  default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+```
+
+![image-20240625155353116](./assets/image-20240625155353116.png) 
+
+> 根据图片，返回值是NORMAL,能不能是数字类型呢?
+>
+> 程序的数据往前端返回是SpringMVC处理的，而SpringMVC底层在处理JSON的时候是使用的Jackson，所以我们用Jackson提供的注解标记一下需要返回的属性就好
+
+![image-20240625155649461](./assets/image-20240625155649461.png) 
+
+![image-20240625155738441](./assets/image-20240625155738441.png) 
+
+![image-20240625155748272](./assets/image-20240625155748272.png) 
 
 ### JSON处理器
 
+![image-20240625160155617](./assets/image-20240625160155617.png) 
 
+  ![image-20240625160326011](./assets/image-20240625160326011.png)  
+
+```java
+@Data
+@TableName(value = "tb_user",autoResultMap = true)
+public class User {
+
+    /**
+     * 用户id
+     */
+    @TableId(type = IdType.AUTO)
+    private Long id;
+
+    /**
+     * 用户名
+     */
+    @TableField("`username`")
+    private String username;
+
+    /**
+     * 密码
+     */
+    private String password;
+
+    /**
+     * 注册手机号
+     */
+    private String phone;
+
+    /**
+     * 详细信息
+     */
+    @TableField(typeHandler = JacksonTypeHandler.class)
+    private UserInfo info;
+```
+
+![image-20240625160822225](./assets/image-20240625160822225.png) 
+
+#### 步骤
+
+1. 字段上加类型处理器
+2. 表名上开启自动类型映射
 
 ## 插件
 
+![image-20240625160927444](./assets/image-20240625160927444.png)
 
+### 分页插件
 
+![image-20240625161018610](./assets/image-20240625161018610.png) 
 
+  ![image-20240625161028231](./assets/image-20240625161028231.png) 
 
+#### 分页插件的配置
 
+![image-20240625163800014](./assets/image-20240625163800014.png) 
 
+![image-20240625163919769](./assets/image-20240625163919769.png) 
+
+```java
+import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MyBatisConfig {
+    @Bean
+    public MybatisPlusInterceptor mybatisPlusInterceptor(){
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        // 创建分页插件
+        PaginationInnerInterceptor paginationInnerInterceptor = new PaginationInnerInterceptor(DbType.MYSQL);
+        paginationInnerInterceptor.setMaxLimit(1000L);
+        // 添加分页插件
+        interceptor.addInnerInterceptor(paginationInnerInterceptor);
+        return interceptor;
+    }
+}
+```
+
+```java
+@Test
+void testPage() {
+    // 模拟参数传递
+    int pageNo = 1, pageSize = 2;
+
+    // 分页条件
+    Page<User> page = Page.of(pageNo, pageSize);
+
+    // 分页查询
+    Page<User> p = userService.page(page);
+
+    // 解析
+    long total = p.getTotal();
+    System.out.println(total);
+
+    long pages = p.getPages();
+    System.out.println(pages);
+
+    List<User> records = p.getRecords();
+    records.forEach(System.out::println);
+}
+```
+
+> TODO
+>
+> 查看分页案例
+
+![image-20240625163939736](./assets/image-20240625163939736.png) 
+
+![image-20240625164026652](./assets/image-20240625164026652.png) 
+
+> 带过滤条件的分页查询
+
+> 关于复杂条件分页查询中实现方法的思考，我们可以使用page,然后需要传递两个参数，一个是page,另一个是wrapper,但是这样比较麻烦，所以可以使用lambdaQuery()，这个后面可以跟很多查询，然后最后跟上page,这样就解决了分页查询中条件和分页的问题。
+
+> 关键是构建统一的查询条件和返回值
