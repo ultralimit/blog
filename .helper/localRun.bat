@@ -1,3 +1,3 @@
 cd /d E:\MkDocs\blog
 call venv/Scripts/activate
-mkdocs serve
+mkdocs serve -a localhost:80

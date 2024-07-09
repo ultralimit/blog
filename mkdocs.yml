@@ -1,4 +1,4 @@
-site_name: 个人博客
+site_name: Record
 site_url: https://ultralimit.github.io/blog/
 plugins:
  - search
@@ -33,7 +33,7 @@ extra_javascript:
 extra_css:
  - https://unpkg.com/katex@0/dist/katex.min.css
 theme:
-  favicon: assets/images/add.jpg
+  favicon: assets/images/user.jpg
   custom_dir: overrides
   logo: assets/user.jpg
   name: material
