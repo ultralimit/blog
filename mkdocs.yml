@@ -1,4 +1,4 @@
-site_name: Record
+site_name: Blog
 site_url: https://ultralimit.github.io/blog/
 plugins:
  - search
