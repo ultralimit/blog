@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://ultralimit.github.io/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86/">
       
       
+        <link rel="prev" href="../%E7%94%A8%E6%88%B7%E6%94%AF%E4%BB%98/">
       
-      <link rel="icon" href="/blog/assets/images/user.jpg">
+      
+        <link rel="next" href="../%E8%B4%AD%E7%89%A9%E8%BD%A6%E5%BC%80%E5%8F%91/">
+      
+      
+      <link rel="icon" href="../../../assets/images/user.jpg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
-        <title>Blog</title>
+        <title>订单状态实时处理 - Blog</title>
       
     
     
-      <link rel="stylesheet" href="/blog/assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="/blog/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +50,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("/blog/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#需求分析" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/blog/." title="Blog" class="md-header__button md-logo" aria-label="Blog" data-md-component="logo">
+    <a href="../../.." title="Blog" class="md-header__button md-logo" aria-label="Blog" data-md-component="logo">
       
-  <img src="/blog/assets/user.jpg" alt="logo">
+  <img src="../../../assets/user.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              订单状态实时处理
             
           </span>
         </div>
@@ -193,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/blog/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -212,7 +223,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/blog/Java/Java%E5%A4%8D%E4%B9%A0-1/" class="md-tabs__link">
+        <a href="../../../Java/Java%E5%A4%8D%E4%B9%A0-1/" class="md-tabs__link">
           
   
   Java
@@ -236,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/blog/Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-tabs__link">
+        <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-tabs__link">
           
   
   Spring
@@ -269,7 +280,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/blog/%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-tabs__link">
+        <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-tabs__link">
           
   
   前端
@@ -299,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/blog/%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-tabs__link">
+        <a href="../../../%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-tabs__link">
           
   
   工具
@@ -316,17 +327,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/Apache%20POI/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Apache%20POI/" class="md-tabs__link">
           
   
   项目
@@ -362,9 +377,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/blog/." title="Blog" class="md-nav__button md-logo" aria-label="Blog" data-md-component="logo">
+    <a href="../../.." title="Blog" class="md-nav__button md-logo" aria-label="Blog" data-md-component="logo">
       
-  <img src="/blog/assets/user.jpg" alt="logo">
+  <img src="../../../assets/user.jpg" alt="logo">
 
     </a>
     Blog
@@ -379,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -439,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/Java/Java%E5%A4%8D%E4%B9%A0-1/" class="md-nav__link">
+      <a href="../../../Java/Java%E5%A4%8D%E4%B9%A0-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/Java/%E6%9E%9A%E4%B8%BE%E7%B1%BB/" class="md-nav__link">
+      <a href="../../../Java/%E6%9E%9A%E4%B8%BE%E7%B1%BB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-nav__link">
+      <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -589,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E5%BE%AE%E6%9C%8D%E5%8A%A101/" class="md-nav__link">
+      <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E5%BE%AE%E6%9C%8D%E5%8A%A101/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -610,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -766,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -787,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%84%9A%E6%89%8B%E6%9E%B6%E5%88%9B%E5%BB%BA%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%84%9A%E6%89%8B%E6%9E%B6%E5%88%9B%E5%BB%BA%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -980,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E5%B7%A5%E5%85%B7/Git/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../%E5%B7%A5%E5%85%B7/Git/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,25 +1028,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1042,7 +1060,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             项目
@@ -1053,8 +1071,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1062,13 +1082,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
@@ -1082,7 +1100,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_1">
             <span class="md-nav__icon md-icon"></span>
             SpringBoot苍穹外卖
@@ -1096,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/Apache%20POI/" class="md-nav__link">
+      <a href="../Apache%20POI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/Spring%20Task/" class="md-nav__link">
+      <a href="../Spring%20Task/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1138,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/SpringCache/" class="md-nav__link">
+      <a href="../SpringCache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/TODO/" class="md-nav__link">
+      <a href="../TODO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/WebSocket/" class="md-nav__link">
+      <a href="../WebSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1201,7 +1219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="md-nav__link">
+      <a href="../%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1222,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%9B%BE%E5%BD%A2%E5%9B%BE%E8%A1%A8/" class="md-nav__link">
+      <a href="../%E5%9B%BE%E5%BD%A2%E5%9B%BE%E8%A1%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1243,7 +1261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%9C%B0%E5%9D%80/" class="md-nav__link">
+      <a href="../%E5%9C%B0%E5%9D%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1264,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1285,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/" class="md-nav__link">
+      <a href="../%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1306,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+      <a href="../%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1327,7 +1345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B/" class="md-nav__link">
+      <a href="../%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1348,7 +1366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E7%94%A8%E6%88%B7%E4%B8%8B%E5%8D%95/" class="md-nav__link">
+      <a href="../%E7%94%A8%E6%88%B7%E4%B8%8B%E5%8D%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1369,7 +1387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E7%94%A8%E6%88%B7%E6%94%AF%E4%BB%98/" class="md-nav__link">
+      <a href="../%E7%94%A8%E6%88%B7%E6%94%AF%E4%BB%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1387,10 +1405,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    订单状态实时处理
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1399,6 +1435,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#需求分析" class="md-nav__link">
+    <span class="md-ellipsis">
+      需求分析
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1411,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E8%B4%AD%E7%89%A9%E8%BD%A6%E5%BC%80%E5%8F%91/" class="md-nav__link">
+      <a href="../%E8%B4%AD%E7%89%A9%E8%BD%A6%E5%BC%80%E5%8F%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1472,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E7%AC%AC%E4%B9%9D%E5%A4%A9%E4%BD%9C%E4%B8%9A/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/" class="md-nav__link">
+      <a href="../%E7%AC%AC%E4%B9%9D%E5%A4%A9%E4%BD%9C%E4%B8%9A/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1527,6 +1590,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#需求分析" class="md-nav__link">
+    <span class="md-ellipsis">
+      需求分析
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1537,8 +1617,26 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  <h1>订单状态实时处理</h1>
+
+<h2 id="需求分析">需求分析<a class="headerlink" href="#需求分析" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20240618111607078" src="../assets/image-20240618111607078.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1556,6 +1654,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../%E7%94%A8%E6%88%B7%E6%94%AF%E4%BB%98/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 用户支付">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                用户支付
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E8%B4%AD%E7%89%A9%E8%BD%A6%E5%BC%80%E5%8F%91/" class="md-footer__link md-footer__link--next" aria-label="Next: 购物车开发">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                购物车开发
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1580,12 +1716,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/blog/", "features": ["content.code.copy", "navigation.top", "navigation.footer", "navigation.expand", "navigation.tabs"], "search": "/blog/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.top", "navigation.footer", "navigation.expand", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/blog/assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
-        <script src="/blog/javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       

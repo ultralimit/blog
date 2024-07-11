@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://ultralimit.github.io/blog/Java/%E6%9E%9A%E4%B8%BE%E7%B1%BB/">
+        <link rel="canonical" href="https://ultralimit.github.io/blog/%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/">
       
       
-        <link rel="prev" href="../Java%E5%A4%8D%E4%B9%A0-1/">
+        <link rel="prev" href="../%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/">
       
       
-        <link rel="next" href="../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/">
+        <link rel="next" href="../%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/">
       
       
-      <link rel="icon" href="../../assets/images/user.jpg">
+      <link rel="icon" href="../../../assets/images/user.jpg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
-        <title>枚举类 - Blog</title>
+        <title>数据库设计文档 - Blog</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#案例一" class="md-skip">
+        <a href="#数据库设计文档" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Blog" class="md-header__button md-logo" aria-label="Blog" data-md-component="logo">
+    <a href="../../.." title="Blog" class="md-header__button md-logo" aria-label="Blog" data-md-component="logo">
       
-  <img src="../../assets/user.jpg" alt="logo">
+  <img src="../../../assets/user.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              枚举类
+              数据库设计文档
             
           </span>
         </div>
@@ -204,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -219,13 +219,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Java%E5%A4%8D%E4%B9%A0-1/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../Java/Java%E5%A4%8D%E4%B9%A0-1/" class="md-tabs__link">
           
   
   Java
@@ -249,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-tabs__link">
+        <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-tabs__link">
           
   
   Spring
@@ -282,7 +280,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-tabs__link">
+        <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-tabs__link">
           
   
   前端
@@ -312,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-tabs__link">
+        <a href="../../../%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-tabs__link">
           
   
   工具
@@ -329,17 +327,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/Apache%20POI/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Apache%20POI/" class="md-tabs__link">
           
   
   项目
@@ -375,9 +377,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Blog" class="md-nav__button md-logo" aria-label="Blog" data-md-component="logo">
+    <a href="../../.." title="Blog" class="md-nav__button md-logo" aria-label="Blog" data-md-component="logo">
       
-  <img src="../../assets/user.jpg" alt="logo">
+  <img src="../../../assets/user.jpg" alt="logo">
 
     </a>
     Blog
@@ -392,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -409,28 +411,25 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -441,7 +440,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Java
@@ -455,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Java%E5%A4%8D%E4%B9%A0-1/" class="md-nav__link">
+      <a href="../../../Java/Java%E5%A4%8D%E4%B9%A0-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -473,28 +472,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    枚举类
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../Java/%E6%9E%9A%E4%B8%BE%E7%B1%BB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -503,69 +484,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#案例一" class="md-nav__link">
-    <span class="md-ellipsis">
-      案例一
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#案例二" class="md-nav__link">
-    <span class="md-ellipsis">
-      案例二
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#迭代枚举元素" class="md-nav__link">
-    <span class="md-ellipsis">
-      迭代枚举元素
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#其他用法和高级用法TODO" class="md-nav__link">
-    <span class="md-ellipsis">
-      其他用法和高级用法（TODO）
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#总结" class="md-nav__link">
-    <span class="md-ellipsis">
-      总结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -665,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-nav__link">
+      <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E5%BE%AE%E6%9C%8D%E5%8A%A101/" class="md-nav__link">
+      <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E5%BE%AE%E6%9C%8D%E5%8A%A101/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -707,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%84%9A%E6%89%8B%E6%9E%B6%E5%88%9B%E5%BB%BA%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%84%9A%E6%89%8B%E6%9E%B6%E5%88%9B%E5%BB%BA%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1008,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../%E5%B7%A5%E5%85%B7/Docker/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1077,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B7%A5%E5%85%B7/Git/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../%E5%B7%A5%E5%85%B7/Git/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1110,25 +1028,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1139,7 +1060,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             项目
@@ -1150,8 +1071,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1159,13 +1082,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
@@ -1179,7 +1100,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_1">
             <span class="md-nav__icon md-icon"></span>
             SpringBoot苍穹外卖
@@ -1193,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/Apache%20POI/" class="md-nav__link">
+      <a href="../Apache%20POI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1214,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/Spring%20Task/" class="md-nav__link">
+      <a href="../Spring%20Task/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1235,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/SpringCache/" class="md-nav__link">
+      <a href="../SpringCache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1256,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/TODO/" class="md-nav__link">
+      <a href="../TODO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1277,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/WebSocket/" class="md-nav__link">
+      <a href="../WebSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1298,7 +1219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="md-nav__link">
+      <a href="../%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1319,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%9B%BE%E5%BD%A2%E5%9B%BE%E8%A1%A8/" class="md-nav__link">
+      <a href="../%E5%9B%BE%E5%BD%A2%E5%9B%BE%E8%A1%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,7 +1261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%9C%B0%E5%9D%80/" class="md-nav__link">
+      <a href="../%E5%9C%B0%E5%9D%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1361,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1379,10 +1300,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    数据库设计文档
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1391,6 +1330,138 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#数据库设计文档" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库设计文档
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据库设计文档">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. employee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-dish" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. dish
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dish_flavor" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. dish_flavor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-setmeal" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. setmeal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-setmeal_dish" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. setmeal_dish
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-address_book" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. address_book
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-shopping_cart" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. shopping_cart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-orders" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. orders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-order_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. order_detail
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1403,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+      <a href="../%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1424,7 +1495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B/" class="md-nav__link">
+      <a href="../%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1445,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E7%94%A8%E6%88%B7%E4%B8%8B%E5%8D%95/" class="md-nav__link">
+      <a href="../%E7%94%A8%E6%88%B7%E4%B8%8B%E5%8D%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1466,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E7%94%A8%E6%88%B7%E6%94%AF%E4%BB%98/" class="md-nav__link">
+      <a href="../%E7%94%A8%E6%88%B7%E6%94%AF%E4%BB%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1487,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86/" class="md-nav__link">
+      <a href="../%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1508,7 +1579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E8%B4%AD%E7%89%A9%E8%BD%A6%E5%BC%80%E5%8F%91/" class="md-nav__link">
+      <a href="../%E8%B4%AD%E7%89%A9%E8%BD%A6%E5%BC%80%E5%8F%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1569,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%A1%B9%E7%9B%AE/SpringBoot%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E7%AC%AC%E4%B9%9D%E5%A4%A9%E4%BD%9C%E4%B8%9A/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/" class="md-nav__link">
+      <a href="../%E7%AC%AC%E4%B9%9D%E5%A4%A9%E4%BD%9C%E4%B8%9A/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1631,47 +1702,116 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#案例一" class="md-nav__link">
+  <a href="#数据库设计文档" class="md-nav__link">
     <span class="md-ellipsis">
-      案例一
+      数据库设计文档
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据库设计文档">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. employee
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#案例二" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-category" class="md-nav__link">
     <span class="md-ellipsis">
-      案例二
+      2. category
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#迭代枚举元素" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-dish" class="md-nav__link">
     <span class="md-ellipsis">
-      迭代枚举元素
+      3. dish
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#其他用法和高级用法TODO" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-dish_flavor" class="md-nav__link">
     <span class="md-ellipsis">
-      其他用法和高级用法（TODO）
+      4. dish_flavor
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#总结" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#5-setmeal" class="md-nav__link">
     <span class="md-ellipsis">
-      总结
+      5. setmeal
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-setmeal_dish" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. setmeal_dish
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-address_book" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. address_book
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-shopping_cart" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. shopping_cart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-orders" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. orders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-order_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. order_detail
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1690,122 +1830,947 @@
                   
 
 
-  <h1>枚举类</h1>
+  <h1>数据库设计文档</h1>
 
-<h2 id="案例一">案例一<a class="headerlink" href="#案例一" title="Permanent link">&para;</a></h2>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">        </span><span class="n">Color</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="na">RED</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">red</span><span class="p">);</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">        </span><span class="n">Color</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="na">GREEN</span><span class="p">;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">green</span><span class="p">);</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="n">Color</span><span class="w"> </span><span class="n">blue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="na">BLUE</span><span class="p">;</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">blue</span><span class="p">);</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">}</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="kd">enum</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="n">RED</span><span class="p">,</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="n">GREEN</span><span class="p">,</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">    </span><span class="n">BLUE</span><span class="p">;</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">}</span>
+<h2 id="数据库设计文档">数据库设计文档<a class="headerlink" href="#数据库设计文档" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>数据表名</th>
+<th>中文名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>employee</td>
+<td>员工表</td>
+</tr>
+<tr>
+<td>2</td>
+<td>category</td>
+<td>分类表</td>
+</tr>
+<tr>
+<td>3</td>
+<td>dish</td>
+<td>菜品表</td>
+</tr>
+<tr>
+<td>4</td>
+<td>dish_flavor</td>
+<td>菜品口味表</td>
+</tr>
+<tr>
+<td>5</td>
+<td>setmeal</td>
+<td>套餐表</td>
+</tr>
+<tr>
+<td>6</td>
+<td>setmeal_dish</td>
+<td>套餐菜品关系表</td>
+</tr>
+<tr>
+<td>7</td>
+<td>user</td>
+<td>用户表</td>
+</tr>
+<tr>
+<td>8</td>
+<td>address_book</td>
+<td>地址表</td>
+</tr>
+<tr>
+<td>9</td>
+<td>shopping_cart</td>
+<td>购物车表</td>
+</tr>
+<tr>
+<td>10</td>
+<td>orders</td>
+<td>订单表</td>
+</tr>
+<tr>
+<td>11</td>
+<td>order_detail</td>
+<td>订单明细表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-employee">1. employee<a class="headerlink" href="#1-employee" title="Permanent link">&para;</a></h3>
+<p>employee表为员工表，用于存储商家内部的员工信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>姓名</td>
+<td></td>
+</tr>
+<tr>
+<td>username</td>
+<td>varchar(32)</td>
+<td>用户名</td>
+<td>唯一</td>
+</tr>
+<tr>
+<td>password</td>
+<td>varchar(64)</td>
+<td>密码</td>
+<td></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>varchar(11)</td>
+<td>手机号</td>
+<td></td>
+</tr>
+<tr>
+<td>sex</td>
+<td>varchar(2)</td>
+<td>性别</td>
+<td></td>
+</tr>
+<tr>
+<td>id_number</td>
+<td>varchar(18)</td>
+<td>身份证号</td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>账号状态</td>
+<td>1正常 0锁定</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>datetime</td>
+<td>创建时间</td>
+<td></td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>datetime</td>
+<td>最后修改时间</td>
+<td></td>
+</tr>
+<tr>
+<td>create_user</td>
+<td>bigint</td>
+<td>创建人id</td>
+<td></td>
+</tr>
+<tr>
+<td>update_user</td>
+<td>bigint</td>
+<td>最后修改人id</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-category">2. category<a class="headerlink" href="#2-category" title="Permanent link">&para;</a></h3>
+<p>category表为分类表，用于存储商品的分类信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>分类名称</td>
+<td>唯一</td>
+</tr>
+<tr>
+<td>type</td>
+<td>int</td>
+<td>分类类型</td>
+<td>1菜品分类  2套餐分类</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>int</td>
+<td>排序字段</td>
+<td>用于分类数据的排序</td>
+</tr>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>状态</td>
+<td>1启用 0禁用</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>datetime</td>
+<td>创建时间</td>
+<td></td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>datetime</td>
+<td>最后修改时间</td>
+<td></td>
+</tr>
+<tr>
+<td>create_user</td>
+<td>bigint</td>
+<td>创建人id</td>
+<td></td>
+</tr>
+<tr>
+<td>update_user</td>
+<td>bigint</td>
+<td>最后修改人id</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-dish">3. dish<a class="headerlink" href="#3-dish" title="Permanent link">&para;</a></h3>
+<p>dish表为菜品表，用于存储菜品的信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>菜品名称</td>
+<td>唯一</td>
+</tr>
+<tr>
+<td>category_id</td>
+<td>bigint</td>
+<td>分类id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>price</td>
+<td>decimal(10,2)</td>
+<td>菜品价格</td>
+<td></td>
+</tr>
+<tr>
+<td>image</td>
+<td>varchar(255)</td>
+<td>图片路径</td>
+<td></td>
+</tr>
+<tr>
+<td>description</td>
+<td>varchar(255)</td>
+<td>菜品描述</td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>售卖状态</td>
+<td>1起售 0停售</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>datetime</td>
+<td>创建时间</td>
+<td></td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>datetime</td>
+<td>最后修改时间</td>
+<td></td>
+</tr>
+<tr>
+<td>create_user</td>
+<td>bigint</td>
+<td>创建人id</td>
+<td></td>
+</tr>
+<tr>
+<td>update_user</td>
+<td>bigint</td>
+<td>最后修改人id</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-dish_flavor">4. dish_flavor<a class="headerlink" href="#4-dish_flavor" title="Permanent link">&para;</a></h3>
+<p>dish_flavor表为菜品口味表，用于存储菜品的口味信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>dish_id</td>
+<td>bigint</td>
+<td>菜品id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>口味名称</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>varchar(255)</td>
+<td>口味值</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-setmeal">5. setmeal<a class="headerlink" href="#5-setmeal" title="Permanent link">&para;</a></h3>
+<p>setmeal表为套餐表，用于存储套餐的信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>套餐名称</td>
+<td>唯一</td>
+</tr>
+<tr>
+<td>category_id</td>
+<td>bigint</td>
+<td>分类id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>price</td>
+<td>decimal(10,2)</td>
+<td>套餐价格</td>
+<td></td>
+</tr>
+<tr>
+<td>image</td>
+<td>varchar(255)</td>
+<td>图片路径</td>
+<td></td>
+</tr>
+<tr>
+<td>description</td>
+<td>varchar(255)</td>
+<td>套餐描述</td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>售卖状态</td>
+<td>1起售 0停售</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>datetime</td>
+<td>创建时间</td>
+<td></td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>datetime</td>
+<td>最后修改时间</td>
+<td></td>
+</tr>
+<tr>
+<td>create_user</td>
+<td>bigint</td>
+<td>创建人id</td>
+<td></td>
+</tr>
+<tr>
+<td>update_user</td>
+<td>bigint</td>
+<td>最后修改人id</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-setmeal_dish">6. setmeal_dish<a class="headerlink" href="#6-setmeal_dish" title="Permanent link">&para;</a></h3>
+<p>setmeal_dish表为套餐菜品关系表，用于存储套餐和菜品的关联关系。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>setmeal_id</td>
+<td>bigint</td>
+<td>套餐id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>dish_id</td>
+<td>bigint</td>
+<td>菜品id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>菜品名称</td>
+<td>冗余字段</td>
+</tr>
+<tr>
+<td>price</td>
+<td>decimal(10,2)</td>
+<td>菜品单价</td>
+<td>冗余字段</td>
+</tr>
+<tr>
+<td>copies</td>
+<td>int</td>
+<td>菜品份数</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-user">7. user<a class="headerlink" href="#7-user" title="Permanent link">&para;</a></h3>
+<p>user表为用户表，用于存储C端用户的信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>openid</td>
+<td>varchar(45)</td>
+<td>微信用户的唯一标识</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>用户姓名</td>
+<td></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>varchar(11)</td>
+<td>手机号</td>
+<td></td>
+</tr>
+<tr>
+<td>sex</td>
+<td>varchar(2)</td>
+<td>性别</td>
+<td></td>
+</tr>
+<tr>
+<td>id_number</td>
+<td>varchar(18)</td>
+<td>身份证号</td>
+<td></td>
+</tr>
+<tr>
+<td>avatar</td>
+<td>varchar(500)</td>
+<td>微信用户头像路径</td>
+<td></td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>datetime</td>
+<td>注册时间</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-address_book">8. address_book<a class="headerlink" href="#8-address_book" title="Permanent link">&para;</a></h3>
+<p>address_book表为地址表，用于存储C端用户的收货地址信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>bigint</td>
+<td>用户id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>consignee</td>
+<td>varchar(50)</td>
+<td>收货人</td>
+<td></td>
+</tr>
+<tr>
+<td>sex</td>
+<td>varchar(2)</td>
+<td>性别</td>
+<td></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>varchar(11)</td>
+<td>手机号</td>
+<td></td>
+</tr>
+<tr>
+<td>province_code</td>
+<td>varchar(12)</td>
+<td>省份编码</td>
+<td></td>
+</tr>
+<tr>
+<td>province_name</td>
+<td>varchar(32)</td>
+<td>省份名称</td>
+<td></td>
+</tr>
+<tr>
+<td>city_code</td>
+<td>varchar(12)</td>
+<td>城市编码</td>
+<td></td>
+</tr>
+<tr>
+<td>city_name</td>
+<td>varchar(32)</td>
+<td>城市名称</td>
+<td></td>
+</tr>
+<tr>
+<td>district_code</td>
+<td>varchar(12)</td>
+<td>区县编码</td>
+<td></td>
+</tr>
+<tr>
+<td>district_name</td>
+<td>varchar(32)</td>
+<td>区县名称</td>
+<td></td>
+</tr>
+<tr>
+<td>detail</td>
+<td>varchar(200)</td>
+<td>详细地址信息</td>
+<td>具体到门牌号</td>
+</tr>
+<tr>
+<td>label</td>
+<td>varchar(100)</td>
+<td>标签</td>
+<td>公司、家、学校</td>
+</tr>
+<tr>
+<td>is_default</td>
+<td>tinyint(1)</td>
+<td>是否默认地址</td>
+<td>1是 0否</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-shopping_cart">9. shopping_cart<a class="headerlink" href="#9-shopping_cart" title="Permanent link">&para;</a></h3>
+<p>shopping_cart表为购物车表，用于存储C端用户的购物车信息。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>商品名称</td>
+<td></td>
+</tr>
+<tr>
+<td>image</td>
+<td>varchar(255)</td>
+<td>商品图片路径</td>
+<td></td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>bigint</td>
+<td>用户id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>dish_id</td>
+<td>bigint</td>
+<td>菜品id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>setmeal_id</td>
+<td>bigint</td>
+<td>套餐id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>dish_flavor</td>
+<td>varchar(50)</td>
+<td>菜品口味</td>
+<td></td>
+</tr>
+<tr>
+<td>number</td>
+<td>int</td>
+<td>商品数量</td>
+<td></td>
+</tr>
+<tr>
+<td>amount</td>
+<td>decimal(10,2)</td>
+<td>商品单价</td>
+<td></td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>datetime</td>
+<td>创建时间</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>冗余字段（反复出现的字段）
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>提高查询效率（多表查询-&gt;单表查询）
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>要求：
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>1. 数量不能太多
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>2. 数据要比较稳定
 </span></code></pre></div></td></tr></table></div>
-<p><img alt="image-20240625152732655" src="../assets/image-20240625152732655.png" /> </p>
-<h2 id="案例二">案例二<a class="headerlink" href="#案例二" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>内部类中使用枚举</p>
-</blockquote>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">        </span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">GREEN</span><span class="p">;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">        </span><span class="n">Color</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="na">RED</span><span class="p">;</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">red</span><span class="p">);</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">        </span><span class="n">Color</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="na">GREEN</span><span class="p">;</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">green</span><span class="p">);</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p><img alt="image-20240625152926034" src="../assets/image-20240625152926034.png" /> </p>
-<h2 id="迭代枚举元素">迭代枚举元素<a class="headerlink" href="#迭代枚举元素" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>for语句迭代枚举元素</p>
-</blockquote>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">enum</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="n">RED</span><span class="p">,</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="n">GREEN</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="n">BLUE</span><span class="p">;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span>
-<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo02</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Color</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="na">values</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p><img alt="image-20240625153309890" src="../assets/image-20240625153309890.png" /> </p>
-<h2 id="其他用法和高级用法TODO">其他用法和高级用法（TODO）<a class="headerlink" href="#其他用法和高级用法TODO" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.runoob.com/java/java-enum.html">Java 枚举(enum) | 菜鸟教程 (runoob.com)</a></p>
-<h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h2>
-<p>所有枚举值都是public static final</p>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">class</span> <span class="nc">Color</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">     </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="n">RED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Color</span><span class="p">();</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">     </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="n">BLUE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Color</span><span class="p">();</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">     </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="n">GREEN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Color</span><span class="p">();</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
+<h3 id="10-orders">10. orders<a class="headerlink" href="#10-orders" title="Permanent link">&para;</a></h3>
+<p>orders表为订单表，用于存储C端用户的订单数据。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>number</td>
+<td>varchar(50)</td>
+<td>订单号</td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>订单状态</td>
+<td>1待付款 2待接单 3已接单 4派送中 5已完成 6已取消</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>bigint</td>
+<td>用户id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>address_book_id</td>
+<td>bigint</td>
+<td>地址id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>order_time</td>
+<td>datetime</td>
+<td>下单时间</td>
+<td></td>
+</tr>
+<tr>
+<td>checkout_time</td>
+<td>datetime</td>
+<td>付款时间</td>
+<td></td>
+</tr>
+<tr>
+<td>pay_method</td>
+<td>int</td>
+<td>支付方式</td>
+<td>1微信支付 2支付宝支付</td>
+</tr>
+<tr>
+<td>pay_status</td>
+<td>tinyint</td>
+<td>支付状态</td>
+<td>0未支付 1已支付 2退款</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>decimal(10,2)</td>
+<td>订单金额</td>
+<td></td>
+</tr>
+<tr>
+<td>remark</td>
+<td>varchar(100)</td>
+<td>备注信息</td>
+<td></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>varchar(11)</td>
+<td>手机号</td>
+<td></td>
+</tr>
+<tr>
+<td>address</td>
+<td>varchar(255)</td>
+<td>详细地址信息</td>
+<td></td>
+</tr>
+<tr>
+<td>user_name</td>
+<td>varchar(32)</td>
+<td>用户姓名</td>
+<td></td>
+</tr>
+<tr>
+<td>consignee</td>
+<td>varchar(32)</td>
+<td>收货人</td>
+<td></td>
+</tr>
+<tr>
+<td>cancel_reason</td>
+<td>varchar(255)</td>
+<td>订单取消原因</td>
+<td></td>
+</tr>
+<tr>
+<td>rejection_reason</td>
+<td>varchar(255)</td>
+<td>拒单原因</td>
+<td></td>
+</tr>
+<tr>
+<td>cancel_time</td>
+<td>datetime</td>
+<td>订单取消时间</td>
+<td></td>
+</tr>
+<tr>
+<td>estimated_delivery_time</td>
+<td>datetime</td>
+<td>预计送达时间</td>
+<td></td>
+</tr>
+<tr>
+<td>delivery_status</td>
+<td>tinyint</td>
+<td>配送状态</td>
+<td>1立即送出  0选择具体时间</td>
+</tr>
+<tr>
+<td>delivery_time</td>
+<td>datetime</td>
+<td>送达时间</td>
+<td></td>
+</tr>
+<tr>
+<td>pack_amount</td>
+<td>int</td>
+<td>打包费</td>
+<td></td>
+</tr>
+<tr>
+<td>tableware_number</td>
+<td>int</td>
+<td>餐具数量</td>
+<td></td>
+</tr>
+<tr>
+<td>tableware_status</td>
+<td>tinyint</td>
+<td>餐具数量状态</td>
+<td>1按餐量提供  0选择具体数量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="11-order_detail">11. order_detail<a class="headerlink" href="#11-order_detail" title="Permanent link">&para;</a></h3>
+<p>order_detail表为订单明细表，用于存储C端用户的订单明细数据。具体表结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>主键</td>
+<td>自增</td>
+</tr>
+<tr>
+<td>name</td>
+<td>varchar(32)</td>
+<td>商品名称</td>
+<td></td>
+</tr>
+<tr>
+<td>image</td>
+<td>varchar(255)</td>
+<td>商品图片路径</td>
+<td></td>
+</tr>
+<tr>
+<td>order_id</td>
+<td>bigint</td>
+<td>订单id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>dish_id</td>
+<td>bigint</td>
+<td>菜品id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>setmeal_id</td>
+<td>bigint</td>
+<td>套餐id</td>
+<td>逻辑外键</td>
+</tr>
+<tr>
+<td>dish_flavor</td>
+<td>varchar(50)</td>
+<td>菜品口味</td>
+<td></td>
+</tr>
+<tr>
+<td>number</td>
+<td>int</td>
+<td>商品数量</td>
+<td></td>
+</tr>
+<tr>
+<td>amount</td>
+<td>decimal(10,2)</td>
+<td>商品单价</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1841,7 +2806,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Java%E5%A4%8D%E4%B9%A0-1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Java复习 1">
+          <a href="../%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 快速开发方法">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1851,20 +2816,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Java复习 1
+                快速开发方法
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../Spring/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E6%88%98/MybatisPlus/" class="md-footer__link md-footer__link--next" aria-label="Next: MybatisPlus">
+          <a href="../%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" class="md-footer__link md-footer__link--next" aria-label="Next: 核心技术">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                MybatisPlus
+                核心技术
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1898,12 +2863,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.top", "navigation.footer", "navigation.expand", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.top", "navigation.footer", "navigation.expand", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
